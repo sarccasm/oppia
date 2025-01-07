@@ -44924,6 +44924,7 @@ __metadata:
   resolution: "twenty-e2e-testing@workspace:packages/twenty-e2e-testing"
   dependencies:
     "@playwright/test": "npm:^1.49.0"
+    twenty-shared: "file:../twenty-shared"
   languageName: unknown
   linkType: soft
 
@@ -45025,6 +45026,13 @@ __metadata:
     zod-to-json-schema: "npm:^3.23.1"
   languageName: unknown
   linkType: soft
+
+"twenty-shared@file:../twenty-shared::locator=twenty-e2e-testing%40workspace%3Apackages%2Ftwenty-e2e-testing":
+  version: 0.40.0-canary
+  resolution: "twenty-shared@file:../twenty-shared#../twenty-shared::hash=7253ff&locator=twenty-e2e-testing%40workspace%3Apackages%2Ftwenty-e2e-testing"
+  checksum: 10c0/dadd7758fe07c62eb6a044ccd4b216956611cbf8171ac4ad0c40c27db95f9dfd88686b4b6c902dade56d6bf2706c07fa7eff0e6d297e8b0e063e1da63c11b3a2
+  languageName: node
+  linkType: hard
 
 "twenty-shared@workspace:packages/twenty-shared":
   version: 0.0.0-use.local

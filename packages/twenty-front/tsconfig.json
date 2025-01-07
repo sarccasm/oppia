@@ -7,12 +7,10 @@
     "skipLibCheck": true,
     "allowJs": true,
     "esModuleInterop": true,
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "allowImportingTsExtensions": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "jsx": "react-jsx",
     "strict": true,
     "noUnusedLocals": false,
@@ -20,6 +18,8 @@
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "../../.cache/tsc",
+    "declaration": true,
+    "composite": true,
     "paths": {
       "@/*": ["packages/twenty-front/src/modules/*"],
       "~/*": ["packages/twenty-front/src/*"],
@@ -28,21 +28,11 @@
       "twenty-shared": ["packages/twenty-shared/dist"]
     }
   },
-  "files": [],
-  "include": [],
+  "include": ["src/**/*"],
   "references": [
-    {
-      "path": "./tsconfig.dev.json"
-    },
-    {
-      "path": "./tsconfig.build.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
-    },
-    {
-      "path": "./tsconfig.storybook.json"
-    }
+    { "path": "./tsconfig.build.json" }, 
+    { "path": "./tsconfig.spec.json" },
+    { "path": "./tsconfig.storybook.json" }
   ],
   "extends": "../../tsconfig.base.json"
 }
